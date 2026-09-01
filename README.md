@@ -22,7 +22,7 @@ en el caso que no haya ninguna tabla llamada asi no va a andar el sistema.
 
 Si no funciona el sistema HABRAS hecho algo mal.
 
--- Manual de uso --
+--- Manual de uso --
 Si funciono todo correctamente te vas a encontrar en el index estando como "invitado"
 invitado es un usuario pensado para: pacientes y familiares de los mismos ¿porque no aparece dentro de la base de datos? esto es debido a que nuestro cliente el hospital de clinicas no nos pidio como requerimiento un login para gente externa al hospital, nos aclararon que era al contrario que nosotros decidimos utilizar esta solucion.
 Al estar como invitado unicamente podes acceder a la parte de repositorio y encuestas anonimas, todo los demas estara bloqueado.
@@ -42,8 +42,13 @@ en administrar encuestas tenes  6 botones para administrar los documentos
 
 
 mientras que en administrar encuestas es asi
-¨Crear 
+¨Crear encuesta¨ donde te lleva a otra interfaz y te permite ponerle un titulo,descripcion, si es segmentada y finalmente las preguntas con un boton abajo donde dice agregar pregunta y un boton  de eliminar a la derecha
+ y abajo del todo con el boton crear la encuesta 
+¨Ver Resultados¨ te permite ver los resultados de la encuestas y los promedios de las mismas
+¨Editar encuestas¨ lleva a una interfaz muy similar de crear encuesta donde podes eliminar preguntar, cambiar titulo y descripcion y si es segmentada o no
+¨Eliminar¨ basicamente elimina la encuesta deseada.
 
+mas o menos eso cubre todas las funciones y roles que tiene en la actualidad la aplicacion web.
 
 
 
