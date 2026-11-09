@@ -1,0 +1,245 @@
+    * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            height: 65px;
+            background: #ffffff;
+            border-bottom: 2px solid #2f9cff;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .usuario {
+            font-size: 15px;
+            white-space: nowrap;
+        }
+
+        /* =========================
+   BOTÓN DE AYUDA
+========================= */
+
+.boton-ayuda {
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    z-index: 10;
+}
+
+.boton-ayuda button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.boton-ayuda img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    transition: 0.2s;
+}
+
+.boton-ayuda img:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   GUÍA
+========================= */
+
+.guia {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+.guia-contenido {
+    width: calc(100% - 30px);
+    max-width: 450px;
+
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+
+    text-align: center;
+}
+
+.guia-contenido h3 {
+    margin-bottom: 15px;
+}
+
+.guia-contenido p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.guia-pasos {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.guia-botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.guia-botones button {
+    flex: 1;
+}
+
+
+        /* =========================
+           MARCA DE AGUA
+        ========================= */
+
+        .AlmeidaTech {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            opacity: 0.09;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .AlmeidaTech img {
+            width: 80vw;
+            max-width: 600px;
+            height: auto;
+        }
+
+
+        /* =========================
+           CONTENIDO
+        ========================= */
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        .titulo {
+            font-size: 34px;
+            font-weight: normal;
+        }
+
+        .subtitulo {
+            font-size: 20px;
+            font-weight: normal;
+            color: #666;
+        }
+
+
+        /* =========================
+           TARJETAS
+        ========================= */
+
+        .tarjeta {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .tarjeta .card {
+            min-height: 155px;
+
+            border: 1px solid #d0d0d0;
+            border-radius: 12px;
+
+            transition: 0.2s;
+        }
+
+        .tarjeta .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+    .icono {
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+}
+ 
+    .icono img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.tarjeta h3 {
+font-size: 22px;
+margin-top: 8px;
+        }
+
+
+
+        /* 
+           FUNCIONES BLOQUEADAS
+        */
+
+.tarjeta.bloqueada {
+cursor: not-allowed;
+}
+
+.tarjeta.bloqueada .card {
+background: #eeeeee;
+border-color: #d5d5d5;
+color: #999999;
+opacity: 0.65;
+ }
+
+.tarjeta.bloqueada .card:hover {
+transform: none;
+box-shadow: none;
+}
+
+.bloqueada .text-secondary {
+color: #999999 !important;
+}
+
+
+        /* TABLET / PC / CELULAR */
+
+        @media (min-width: 768px) {
+
+            .titulo {
+                font-size: 40px;
+            }
+
+            .subtitulo {
+                font-size: 24px;
+            }
+
+        }
+
